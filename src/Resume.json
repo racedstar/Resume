@@ -1,0 +1,86 @@
+{
+    "PersonalInformation":[
+    {
+        "Type":"性別",
+        "Val":"男",
+        "ValType":"string"
+    },
+    {
+        "Type":"出生年月日",
+        "Val":"1991/02/11",
+        "ValType":"string"
+    },
+    {
+        "Type":"E-Mail",
+        "Val":"racedstar@gmail.com",
+        "ValType":"string"
+    },
+    {
+        "Type":"Github",
+        "Val":"https://github.com/racedstar",
+        "ValType":"link"
+
+    },
+    {
+        "Type":"Phone",
+        "Val":"+886-908-619-211",
+        "ValType":"string"
+    }],
+    "Exp":[
+        {"Title":"Title", "Val":"哈瑪星科技股份有限公司"},
+        {"Title":"JobTitle", "Val":"實習生"},
+        {"Title":"Time", "Val": "2013/10~2016/05"},
+        {"Title":"Description", "Val":[
+            "網站開發及維護",
+            "資料庫維護"
+        ]}
+    ],
+    "Summary":"擅長使用asp.net for C#開發網站，有自學過asp.net MVC並製作網站，希望有機會可以挑戰使用MVC的專案。碩士在學期間曾於哈瑪星科技股份有限公司實習過，時間約為兩年半，實習期間曾經參與過三個專案，並有駐點公務機關之經驗，熟悉與公務機關溝通交涉。最近正接觸 React.js，本履歷是學習後簡單應用 React.js 建構出來的頁面。",
+    "Skill":[
+        {
+            "Title":"Language",
+            "Tools":[
+                "C#",
+                "ASP.NET",
+                "javascript(jQuery)",
+                "SQL(SQL Server)"
+        ]},
+        {
+            "Title":"REVISION CONTROL",
+            "Tools":[
+                "Git",
+                "TFS"
+        ]}
+    ],
+    "Projects":[
+        {
+            "Title":"臺灣港務公司",
+            "Link":"http://www.twport.com.tw/",
+            "Description":"參與開發及維護 系統功能包含最新消息、影音、相簿等功能"
+        },
+        {
+            "Title":"臺灣港務港勤",
+            "Link":"https://www.tipcmarine.com.tw/",
+            "Description":"參與開發及維護 系統功能包含最新消息、影音、相簿等功能"
+        },
+        {
+            "Title":"行政院性平處-性平小學堂",
+            "Link":"https://www.gender.ey.gov.tw/school/",
+            "Description":"參與開發及維護 後台系統及前台最新消息"
+        }
+    ],
+        "Education":[
+        {
+            "Title":"學士",
+            "School":"樹德科技大學",
+            "Deptartment":"資訊管理系",
+            "Time":"2009/09~2013/06"
+        },
+        {
+            "Title":"碩士",
+            "School":"樹德科技大學",
+            "Deptartment":"資訊管理所",
+            "Time":"2013/09~2017/01"
+        }
+    ]
+}

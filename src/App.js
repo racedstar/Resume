@@ -1,28 +1,68 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import PersonalInformationComponent from './PersonalInformation';
+import EducationComponent from './Education';
+import ExpComponent from './Exp';
+import SkillComponent from './Skill';
+import ProjectsComponent from './Projects';
+
+import ResumeData from './Resume.json'
+import './Resume.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        const {PersonalInformation, Exp, Summary, Skill, Projects, Education} = ResumeData;
+        return (
+            <div>
+                <div className="personalInformation">
+                    <h1>郝偉翔的個人履歷</h1>
+                    <ul>
+                        {
+                            PersonalInformation.map((value) => (
+                                <PersonalInformationComponent {...value} />
+                            ))
+                        }
+                    </ul>
+                </div>
+                <div className="summary">
+                    <h1>自傳</h1>
+                    <p>{Summary}</p>
+                </div>
+                <div className="education">
+                    <h1>學歷</h1>
+                    {
+                        Education.map((value) => (
+                            <EducationComponent {...value} />
+                        ))
+                    }
+                </div>
+                <div className="exp">
+                    <h1>經歷</h1>
+                    {
+                        Exp.map((value) => (
+                            <ExpComponent {...value} />
+                        ))
+                    }
+                </div>
+                <div className="skill">
+                    <h1>技能</h1>
+                    {
+                        Skill.map((value) => (
+                            <SkillComponent {...value} />
+                        ))
+                    }
+                </div>
+                <div className="projects">
+                    <h1>專案</h1>
+                    {
+                        Projects.map((value) => (
+                            <ProjectsComponent {...value} />
+                        ))
+                    }
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
