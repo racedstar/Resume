@@ -5,13 +5,14 @@ import EducationComponent from './Education';
 import ExpComponent from './Exp';
 import SkillComponent from './Skill';
 import ProjectsComponent from './Projects';
+import DemoComponent from './Demo';
 
 import ResumeData from './Resume.json'
 import './Resume.css';
 
 class App extends Component {
     render() {
-        const {PersonalInformation, Exp, Summary, Skill, Projects, Education} = ResumeData;
+        const {PersonalInformation, Exp, Summary, Skill, Projects, Education, Demo} = ResumeData;
         return (
             <div>
                 <div className="personalInformation">
@@ -57,6 +58,14 @@ class App extends Component {
                     {
                         Projects.map((value) => (
                             <ProjectsComponent {...value} />
+                        ))
+                    }
+                </div>
+                <div className="demo">
+                    <h1>作品</h1>
+                    {
+                        Demo.map((value) => (
+                            <DemoComponent {...value} />
                         ))
                     }
                 </div>

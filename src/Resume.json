@@ -27,15 +27,26 @@
         "ValType":"string"
     }],
     "Exp":[
-        {"Title":"Title", "Val":"哈瑪星科技股份有限公司"},
-        {"Title":"JobTitle", "Val":"實習生"},
-        {"Title":"Time", "Val": "2013/10~2016/05"},
-        {"Title":"Description", "Val":[
-            "網站開發及維護",
-            "資料庫維護"
-        ]}
+        {
+            "Title":"Title",
+            "Val":"哈瑪星科技股份有限公司"
+        },
+        {
+            "Title":"JobTitle"
+            ,"Val":"實習生"
+        },
+        {"Title":"Time",
+            "Val": "2013/10~2016/05"
+        },
+        {
+            "Title":"Description",
+            "Val":[
+                "網站開發及維護",
+                "資料庫維護"
+            ]
+        }
     ],
-    "Summary":"擅長使用asp.net for C#開發網站，有自學過asp.net MVC並製作網站，希望有機會可以挑戰使用MVC的專案。碩士在學期間曾於哈瑪星科技股份有限公司實習過，時間約為兩年半，實習期間曾經參與過三個專案，並有駐點公務機關之經驗，熟悉與公務機關溝通交涉。最近正接觸 React.js，本履歷是學習後簡單應用 React.js 建構出來的頁面。",
+    "Summary":"擅長使用asp.net for C#開發網站，有自學過asp.net MVC並製作網站，希望有機會可以挑戰使用MVC的專案。碩士在學期間曾於哈瑪星科技股份有限公司實習過，時間約為兩年半，實習期間曾經參與過三個專案，並有駐點公務機關之經驗。",
     "Skill":[
         {
             "Title":"Language",
@@ -69,7 +80,7 @@
             "Description":"參與開發及維護 後台系統及前台最新消息"
         }
     ],
-        "Education":[
+    "Education":[
         {
             "Title":"學士",
             "School":"樹德科技大學",
@@ -81,6 +92,32 @@
             "School":"樹德科技大學",
             "Deptartment":"資訊管理所",
             "Time":"2013/09~2017/01"
+        }
+    ],
+    "Demo":[
+        {
+            "Title": "檔案分享網站",
+            "Url": "http://220.132.95.43/",
+            "Tools":".net MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
+            "Description": "擁有簡易的會員登入系統﹐ 可供上傳圖片、文件及壓縮檔，亦有相簿系統。相簿與圖片為一對多功能，先至圖片系統上傳後，一張圖片可供多個相簿使用。",
+            "Other": [
+                "測試用帳號: test",
+                "測試用密碼: test1234"
+            ]
+        },
+        {
+            "Title": "寵物美容管理",
+            "Url": "http://220.132.95.43:8081/",
+            "Tools":".net MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
+            "Description": "可新增飼主、寵物，也可以自訂品種與物種及美容項目等。飼主與寵物為一對多關係， 一名飼主可擁有多隻寵物。結帳功能需先設置美容項目，只有單純的數字技術，並沒有涉及到金流等實作。",
+            "Other": []
+        },
+        {
+            "Title": "Croppie圖片裁切套件 demo",
+            "Url": "https://racedstar.github.io/Croopie-Demo/index.html",
+            "Tools": "jQuery、Croppie",
+            "Description": "上傳多張圖片並使用Croppie實現圖片剪裁及旋轉功能。此網站並無後端，所有操作都在前端完成。",
+            "Other": []
         }
     ]
 }

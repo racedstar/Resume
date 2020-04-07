@@ -38,3 +38,19 @@ p {
 .Summary{
 	word-wrap:break-word;
 }
+
+.demo a{
+	color:blue
+}
+
+.demo div{
+	margin-bottom: 40px; 
+}
+
+.demo span{
+	font-weight: bold;
+}
+
+.demo p{
+	text-indent: 20px;
+}
