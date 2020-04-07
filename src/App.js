@@ -14,60 +14,68 @@ class App extends Component {
     render() {
         const {PersonalInformation, Exp, Summary, Skill, Projects, Education, Demo} = ResumeData;
         return (
-            <div>
+            <div className="container">
                 <div className="personalInformation">
-                    <h1>郝偉翔的個人履歷</h1>
-                    <ul>
+                    <div>
+                        <img src="img/01.jpg"></img>
+                        <h1>郝偉翔</h1>
+                    </div>
+                    <div className="information">
+                        <h2>基本資料</h2>
+                        <ul>
+                            {
+                                PersonalInformation.map((value) => (
+                                    <PersonalInformationComponent {...value} />
+                                ))
+                            }
+                        </ul>
+                    </div>                    
+                    <div className="skill">
+                        <h2>技能</h2>
                         {
-                            PersonalInformation.map((value) => (
-                                <PersonalInformationComponent {...value} />
+                            Skill.map((value) => (
+                                <SkillComponent {...value} />
                             ))
                         }
-                    </ul>
+                    </div>
                 </div>
-                <div className="summary">
-                    <h1>自傳</h1>
-                    <p>{Summary}</p>
-                </div>
-                <div className="education">
-                    <h1>學歷</h1>
-                    {
-                        Education.map((value) => (
-                            <EducationComponent {...value} />
-                        ))
-                    }
-                </div>
-                <div className="exp">
-                    <h1>經歷</h1>
-                    {
-                        Exp.map((value) => (
-                            <ExpComponent {...value} />
-                        ))
-                    }
-                </div>
-                <div className="skill">
-                    <h1>技能</h1>
-                    {
-                        Skill.map((value) => (
-                            <SkillComponent {...value} />
-                        ))
-                    }
-                </div>
-                <div className="projects">
-                    <h1>專案</h1>
-                    {
-                        Projects.map((value) => (
-                            <ProjectsComponent {...value} />
-                        ))
-                    }
-                </div>
-                <div className="demo">
-                    <h1>作品</h1>
-                    {
-                        Demo.map((value) => (
-                            <DemoComponent {...value} />
-                        ))
-                    }
+                <div className="Content">
+                    <div className="summary">
+                        <h2>自傳</h2>
+                        <p>{Summary}</p>
+                    </div>
+                    <div className="education">
+                        <h2>學歷</h2>
+                        {
+                            Education.map((value) => (
+                                <EducationComponent {...value} />
+                            ))
+                        }
+                    </div>
+                    <div className="exp">
+                        <h2>經歷</h2>
+                        {
+                            Exp.map((value) => (
+                                <ExpComponent {...value} />
+                            ))
+                        }
+                    </div>
+                    <div className="projects">
+                        <h2>專案</h2>
+                        {
+                            Projects.map((value) => (
+                                <ProjectsComponent {...value} />
+                            ))
+                        }
+                    </div>
+                    <div className="demo">
+                        <h2>作品</h2>
+                        {
+                            Demo.map((value) => (
+                                <DemoComponent {...value} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         );

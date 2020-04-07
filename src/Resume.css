@@ -9,18 +9,12 @@ body{
 	color: #444;
 	position: relative;	
 }
-h1{
-    font-size: 38px;
-	text-transform: uppercase;
-	border-bottom: 5px solid #beade642;
-}
 h2 {
-	font: sans-serif;
-	font-size: 20px;
-	text-transform: uppercase;
+	font: sans-serif;		
 }
 li {
-	margin-top: 3px;
+	margin-top: 5px;
+	text-align: left;
 }
 
 a, a:visited {
@@ -33,6 +27,55 @@ p {
 
 #container{
 	margin: 35px 0;	
+}
+
+.container{
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container h1{
+	font-size: 38px;
+}
+
+.container h2{
+	font-size: 28px;
+	text-align: left;
+    border-bottom: solid 1px;
+}
+
+.container h3{
+	font-size: 20px;
+}
+
+.personalInformation{
+	text-align: center;
+    position: fixed;
+    top: 0;
+    left: 370px;
+    display: flex;
+    width: 13%;
+    height: 100vh;
+    padding: .5rem 1rem;
+    flex-direction: column;	
+	background-color:#c8edf58f;
+}
+
+
+
+.personalInformation img{
+	width:200px;
+	height:200px;
+	border-radius: 100%;
+}
+
+.Content{
+	position: absolute;
+    right: 0px;
+    width: 75%;
 }
 
 .Summary{
@@ -51,6 +94,6 @@ p {
 	font-weight: bold;
 }
 
-.demo p{
+.projects p, .demo p{
 	text-indent: 20px; 
 }
