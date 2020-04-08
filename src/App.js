@@ -15,28 +15,30 @@ class App extends Component {
         const {PersonalInformation, Exp, Summary, Skill, Projects, Education, Demo} = ResumeData;
         return (
             <div className="container">
-                <div className="personalInformation">
-                    <div>
-                        <img src="img/01.jpg"></img>
-                        <h1>郝偉翔</h1>
-                    </div>
-                    <div className="information">
-                        <h2>基本資料</h2>
-                        <ul>
+                <div className="informationArea">
+                    <div className="personalInformation">
+                        <div>
+                            <img src="img/01.jpg"></img>
+                            <h1>郝偉翔</h1>
+                        </div>
+                        <div className="information">
+                            <h2>基本資料</h2>
+                            <ul>
+                                {
+                                    PersonalInformation.map((value) => (
+                                        <PersonalInformationComponent {...value} />
+                                    ))
+                                }
+                            </ul>
+                        </div>                    
+                        <div className="skill">
+                            <h2>技能</h2>
                             {
-                                PersonalInformation.map((value) => (
-                                    <PersonalInformationComponent {...value} />
+                                Skill.map((value) => (
+                                    <SkillComponent {...value} />
                                 ))
                             }
-                        </ul>
-                    </div>                    
-                    <div className="skill">
-                        <h2>技能</h2>
-                        {
-                            Skill.map((value) => (
-                                <SkillComponent {...value} />
-                            ))
-                        }
+                        </div>
                     </div>
                 </div>
                 <div className="Content">

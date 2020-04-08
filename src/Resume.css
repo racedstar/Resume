@@ -3,10 +3,9 @@ body{
 	margin-left: 20%;
 	width: 60%;
 	margin: 0 auto;
-	background-color: #fff;	
+	background-color: #fff;	 */
 	font-size: 15px;
-	color: #444;
-	position: relative;	 */
+	color: #444;		
 	font-family: Georgia;
 }
 h2 {
@@ -25,15 +24,10 @@ p {
 	margin: 14px 0;
 }
 
-#container{
-	margin: 35px 0;	
-}
-
 .container{
-	width: 100%;
-    margin-right: auto;
-	margin-left: auto;
-	position: relative;
+	width: 1140px;
+	padding: 0 20%;
+	display: flex;
 }
 
 .container h1{
@@ -50,11 +44,14 @@ p {
 	font-size: 20px;
 }
 
+.informationArea{
+	width: 26%;
+}
+
 .personalInformation{
 	text-align: center;
     position: fixed;
-    top: 0;
-    left: 370px;
+    top: 0;    
     display: flex;
     width: 13%;
     height: 100vh;
@@ -63,18 +60,15 @@ p {
 	background-color:#c8edf58f;
 }
 
-
-
 .personalInformation img{
 	width:200px;
 	height:200px;
 	border-radius: 100%;
 }
 
-.Content{
-	position: absolute;
-    right: 0px;
-    width: 65%;
+.Content{	
+	display: block;
+	width: 74%;	
 }
 
 .Summary{
