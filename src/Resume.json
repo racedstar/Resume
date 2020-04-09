@@ -39,25 +39,25 @@
     ],
     "Exp":[
         {
-            "Title":"Title",
+            "Title":"公司",
             "Val":"哈瑪星科技股份有限公司"
         },
         {
-            "Title":"JobTitle"
+            "Title":"職位"
             ,"Val":"實習生"
         },
-        {"Title":"Time",
+        {"Title":"時間",
             "Val": "2013/10~2016/05"
         },
         {
-            "Title":"Description",
+            "Title":"工作內容",
             "Val":[
                 "網站開發及維護",
                 "資料庫維護"
             ]
         }
     ],
-    "Summary":"擅長使用ASP.NET for C#開發網站，有自學過asp.net MVC並製作網站，希望有機會可以挑戰使用MVC的專案。碩士在學期間曾於哈瑪星科技股份有限公司實習過，時間約為兩年半，實習期間曾經參與過三個專案，並有駐點公務機關之經驗。",
+    "Summary":"擅長使用ASP.NET(C#)開發網站，有最近正在研究 ASP.NET MVC framework 並製作網站，希望能挑戰使用 MVC framework 的專案。碩士在學期間曾於哈瑪星科技股份有限公司實習，時間約為兩年半，期間曾經參與過三個專案，並有駐點公務機關之經驗。",
     "Skill":[
         {
             "Title":"Language",
@@ -109,7 +109,7 @@
         {
             "Title": "檔案分享網站",
             "URL": "http://220.132.95.43/",
-            "Tools":".net MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
+            "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
             "Description": "擁有簡易的會員登入系統﹐ 可供上傳圖片、文件及壓縮檔，亦有相簿系統。相簿與圖片為一對多功能，先至圖片系統上傳後，一張圖片可供多個相簿使用。",
             "Other": [
                 "測試用帳號: test",
@@ -119,7 +119,7 @@
         {
             "Title": "寵物美容管理",
             "URL": "http://220.132.95.43:8081/",
-            "Tools":".net MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
+            "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
             "Description": "可新增飼主、寵物，也可以自訂品種與物種及美容項目等。飼主與寵物為一對多關係， 一名飼主可擁有多隻寵物。結帳功能需先設置美容項目，只有單純的數字技術，並沒有涉及到金流等實作。",
             "Other": []
         },
