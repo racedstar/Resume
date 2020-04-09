@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class Exp extends Component {
     render() {
         const{Title, Val} = this.props;
-        if(Title === "Description"){
+        if(Title === "工作內容"){
             return(
                 <div>
-                    <li>{Title}： </li>
+                    <li><strong>{Title}</strong>： </li>
                     <ul>
                         {
                             Val.map((value) => (
@@ -19,7 +19,7 @@ class Exp extends Component {
         }
         return (
             <div>
-                <li>{Title}： {Val}</li>
+                <li><strong>{Title}</strong>： {Val}</li>
             </div>
         );
     }
