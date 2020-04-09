@@ -5,7 +5,7 @@ class Projects extends Component {
         const{Title, Link, Description} = this.props;
         return (
             <div>
-                <h3>{Title}<a href={Link}>({Link})</a></h3>
+                <h3>{Title}<a target="_blank" href={Link}>({Link})</a></h3>
                 <p>{Description}</p>
             </div>
         );

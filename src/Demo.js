@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class Demo extends Component {
     render() {
-        const {Title, Url, Tools, Description, Other} = this.props;
+        const {Title, URL, Tools, Description, Other} = this.props;
         return (
             <div>
                 <h3>{Title}</h3>
-                <p><span>網址：</span> <a href={Url}>{Url}</a></p>
+                <p><span>網址：</span> <a target="_blank" href={URL}>{URL}</a></p>
                 <ul>
                     {
                         Other.map((value) => (

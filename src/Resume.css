@@ -1,9 +1,9 @@
 body{
-    /* margin-bottom: 20%;
+    margin-bottom: 20%;
 	margin-left: 20%;
 	width: 60%;
 	margin: 0 auto;
-	background-color: #fff;	 */
+	background-color: #fff;	
 	font-size: 15px;
 	color: #444;		
 	font-family: Georgia;
@@ -24,40 +24,23 @@ p {
 	margin: 14px 0;
 }
 
-.container{
-	width: 1140px;
-	padding: 0 20%;
-	display: flex;
-}
-
-.container h1{
+h1{
 	font-size: 38px;
 }
 
-.container h2{
+h2{
 	font-size: 28px;
 	text-align: left;
     border-bottom: solid 1px;
 }
 
-.container h3{
+h3{
 	font-size: 20px;
 }
 
-.informationArea{
-	width: 26%;
-}
-
 .personalInformation{
-	text-align: center;
-    position: fixed;
-    top: 0;    
-    display: flex;
-    width: 13%;
-    height: 100vh;
-    padding: .5rem 1rem;
-    flex-direction: column;	
-	background-color:#c8edf58f;
+	display: flex;
+	width:100%;
 }
 
 .personalInformation img{
@@ -66,9 +49,8 @@ p {
 	border-radius: 100%;
 }
 
-.Content{	
-	display: block;
-	width: 74%;	
+.information{
+	width:85%;
 }
 
 .Summary{
