@@ -32,6 +32,10 @@ class App extends Component {
 
                     </div>
                 </div>
+                <div className="summary">
+                    <h2>自傳</h2>
+                    <p>{Summary}</p>
+                </div>
                 <div className="exp">
                     <h2>經歷</h2>
                     {
@@ -48,26 +52,22 @@ class App extends Component {
                         ))
                     }
                 </div>
-                <div className="skill">
+                {/* <div className="skill">
                     <h2>技能</h2>
                     {
                         Skill.map((value) => (
                             <SkillComponent {...value} />
                         ))
                     }
-                </div>
-                <div className="summary">
-                    <h2>自傳</h2>
-                    <p>{Summary}</p>
-                </div>
-                <div className="education">
+                </div> */}
+                {/* <div className="education">
                     <h2>學歷</h2>
                     {
                         Education.map((value) => (
                             <EducationComponent {...value} />
                         ))
                     }
-                </div>
+                </div> */}
 
                 <div className="demo">
                     <h2>作品</h2>

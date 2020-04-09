@@ -7,8 +7,7 @@ class Skill extends Component {
             <div>
                 <h3>{Title}</h3>
                 <ul>
-                    {
-                        
+                    {                        
                         Tools.map((value) => (
                             <li>{value}</li>
                         ))                      

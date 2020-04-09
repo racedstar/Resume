@@ -1,31 +1,42 @@
 {
     "PersonalInformation":[
-    {
-        "Type":"性別",
-        "Val":"男",
-        "ValType":"string"
-    },
-    {
-        "Type":"出生年月日",
-        "Val":"1991/02/11",
-        "ValType":"string"
-    },
-    {
-        "Type":"E-Mail",
-        "Val":"racedstar@gmail.com",
-        "ValType":"string"
-    },
-    {
-        "Type":"Github",
-        "Val":"https://github.com/racedstar",
-        "ValType":"link"
+        {
+            "Type":"性別",
+            "Val":"男",
+            "ValType":"string"
+        },
+        {
+            "Type":"出生年月日",
+            "Val":"1991/02/11",
+            "ValType":"string"
+        },
+        {
+            "Type":"E-Mail",
+            "Val":"racedstar@gmail.com",
+            "ValType":"string"
+        },
+        {
+            "Type":"Github",
+            "Val":"https://github.com/racedstar",
+            "ValType":"link"
 
-    },
-    {
-        "Type":"Phone",
-        "Val":"+886-908-619-211",
-        "ValType":"string"
-    }],
+        },
+        {
+            "Type":"Phone",
+            "Val":"+886-908-619-211",
+            "ValType":"string"
+        },
+        {
+            "Type":"最高學歷",
+            "Val":"樹德科技大學 資訊管理 碩士(2017/01畢)",
+            "ValType":"string"        
+        },
+        {
+            "Type":"技能",
+            "Val":"C#、ASP.NET、javascript、jQuery、SQL(MS SQL)、Git",
+            "ValType":"string"        
+        }        
+    ],
     "Exp":[
         {
             "Title":"Title",

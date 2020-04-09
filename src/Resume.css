@@ -53,7 +53,7 @@ h3{
 	width:85%;
 }
 
-.Summary{
+.summary{
 	word-wrap:break-word;
 }
 
@@ -69,6 +69,6 @@ h3{
 	font-weight: bold;
 }
 
-.projects p, .demo p{
+.summary p, .projects p, .demo p{
 	text-indent: 20px; 
 }
