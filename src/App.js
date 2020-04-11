@@ -52,23 +52,6 @@ class App extends Component {
                         ))
                     }
                 </div>
-                {/* <div className="skill">
-                    <h2>技能</h2>
-                    {
-                        Skill.map((value) => (
-                            <SkillComponent {...value} />
-                        ))
-                    }
-                </div> */}
-                {/* <div className="education">
-                    <h2>學歷</h2>
-                    {
-                        Education.map((value) => (
-                            <EducationComponent {...value} />
-                        ))
-                    }
-                </div> */}
-
                 <div className="demo">
                     <h2>作品</h2>
                     {
