@@ -34,7 +34,9 @@ class App extends Component {
                 </div>
                 <div className="summary">
                     <h2>自傳</h2>
-                    <p>{Summary}</p>
+                    {Summary.map((value) => (
+                        <p>{value}</p>
+                    ))}
                 </div>
                 <div className="exp">
                     <h2>經歷</h2>

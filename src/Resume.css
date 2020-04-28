@@ -76,3 +76,15 @@ h3{
 .projects div{
 	margin-bottom:30px;
 }
+
+.imgDiv{
+	display: flex;
+}
+
+.imgDiv img{
+	height:auto;
+	width:200px;
+	margin: 5px 5px;
+	border: 1px solid;
+	cursor: pointer;
+}
