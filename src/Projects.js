@@ -7,6 +7,7 @@ class Projects extends Component {
         img.id = 'tooltip';
         img.src = imgSrc;
         document.body.appendChild(img);
+        
     
         let tooltip = document.getElementById('tooltip');
         tooltip.style.width = '800px';        
