@@ -7,11 +7,23 @@ class Projects extends Component {
         img.id = 'tooltip';
         img.src = imgSrc;
         document.body.appendChild(img);
-
+    
         let tooltip = document.getElementById('tooltip');
-        tooltip.style.width = '800px';
-        tooltip.style.left = (e.pageX + 20) + "px";
-        tooltip.style.top = (e.pageY + 20) + "px";
+        tooltip.style.width = '800px';        
+        if(id.indexOf('4') != -1 || id.indexOf('5') != -1){
+            tooltip.style.left = (e.pageX - 820) + "px";
+        }
+        else{
+            tooltip.style.left = (e.pageX + 20) + "px";
+        }
+
+        if(id.indexOf('croppie') != -1){
+            tooltip.style.top = (e.pageY - 400) + "px";
+        }
+        else{
+            tooltip.style.top = (e.pageY) + "px";
+        }
+        
         tooltip.style.position = "absolute";
     }
 
