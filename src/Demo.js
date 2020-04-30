@@ -1,28 +1,6 @@
 import React, { Component } from 'react';
 
 class Demo extends Component {
-    componentDidMount(){
-        this.imgCreate();
-    }
-    imgCreate = () => {      
-        let img = this.props.img  
-        let id = img + "imgDiv";
-        let imgDiv = document.getElementById(id);
-        let length = 5;
-
-        if(img == "croppie"){
-            length = 2;
-        }
-
-        for(let i =1; i <= length; i++){
-            let imgElement = document.createElement('img');
-            imgElement.id = img + i;
-            imgElement.src = "img/" + img + "/0" + i + ".jpg";
-            imgElement.addEventListener("mouseover", this.mouseOver);
-            imgElement.addEventListener("mouseout", this.mouseOut);
-            imgDiv.appendChild(imgElement);
-        }
-    }
     mouseOver = (e) => {
         let id = e.target.id;
         let imgSrc = document.getElementById(id).src;        
@@ -40,13 +18,12 @@ class Demo extends Component {
             tooltip.style.left = (e.pageX + 20) + "px";
         }
 
-        if(id.indexOf('croppie') != -1){
+        if(id.indexOf('petManager') != -1){
             tooltip.style.top = (e.pageY - 400) + "px";
         }
         else{
             tooltip.style.top = (e.pageY) + "px";
         }
-        
         tooltip.style.position = "absolute";
     }
     
@@ -54,7 +31,7 @@ class Demo extends Component {
         document.getElementById('tooltip').remove();
     }
     render() {
-        const {Title, img, URL, Tools, Description, Other} = this.props;
+        const {Title, imgFolder, imgFile, URL, Tools, Description, Other} = this.props;
         return (
             <div>
                 <h3>{Title}</h3>
@@ -66,15 +43,29 @@ class Demo extends Component {
                         ))
                     }
                 </ul>
-                <div id={img + "imgDiv"} className="imgDiv">                    
-                    {/* <img id={img + "01"} src={"img/" + img + "/01.jpg"} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}/>
-                    <img id={img + "02"} src={"img/" + img + "/02.jpg"} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}/>
-                    <img id={img + "03"} src={"img/" + img + "/03.jpg"} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}/>
-                    <img id={img + "04"} src={"img/" + img + "/04.jpg"} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}/>
-                    <img id={img + "05"} src={"img/" + img + "/05.jpg"} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}/> */}
-                </div>
                 <p><span>使用技術及框架：</span>{Tools}</p>
-                <p><span>簡介：</span>{Description}</p>                
+                <p><span>簡介：</span>{Description}</p>
+                <div id={`${imgFolder}-imgDiv`} className="imgDiv">
+                    <table className="table table-striped">
+                        <thead></thead>
+                        <tbody>
+                            {
+                                imgFile.map((value) => (
+                                    <tr>
+                                        <td>
+                                            <a href={`img/${imgFolder}/${value.fileName}.jpg`} target="_blank">
+                                                <img src={`img/${imgFolder}/${value.fileName}.jpg`}></img>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p>{value.Narrative}</p>
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

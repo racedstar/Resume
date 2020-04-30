@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import PersonalInformationComponent from './PersonalInformation';
-import EducationComponent from './Education';
 import ExpComponent from './Exp';
-import SkillComponent from './Skill';
 import ProjectsComponent from './Projects';
 import DemoComponent from './Demo';
 
@@ -12,7 +10,7 @@ import './Resume.css';
 
 class App extends Component {
     render() {
-        const { PersonalInformation, Exp, Summary, Skill, Projects, Education, Demo } = ResumeData;
+        const { PersonalInformation, Exp, Summary, Projects, Demo} = ResumeData;
         return (
             <div>
                 <h1>郝偉翔</h1>
@@ -29,7 +27,6 @@ class App extends Component {
                     </div>
                     <div>
                         <img src="img/01.jpg"></img>
-
                     </div>
                 </div>
                 <div className="summary">
