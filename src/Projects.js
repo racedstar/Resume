@@ -13,9 +13,11 @@ class Projects extends Component {
                 <div>
                     <strong>困難點：</strong>
                     <ul>
-                        {Difficult.map((value) => (
-                            <p>{value.title}：{value.content}</p>
-                        ))}
+                        {
+                            Difficult.map((value) => (
+                                <p>{value.title}：{value.content}</p>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div id={`${imgFolder}-imgDiv`} className="imgDiv">

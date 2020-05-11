@@ -197,7 +197,10 @@
             ],
             "URL": "https://racedstar.github.io/Croopie-Demo/index.html",
             "Tools": "HTML5、jQuery、Croppie",
-            "Description": "Croppie是一個快速且容易使用的jQuery的圖像外掛。能夠迅速的做出類似於FaceBook的大頭照裁剪功能。",
+            "Description": "Croppie是一個快速且容易使用的jQuery的圖像外掛。",
+            "Features":[
+                "能夠迅速的做出類似於FaceBook的大頭照裁剪功能。"
+            ],
             "Other": []
         },
         {
@@ -206,28 +209,24 @@
             "imgFile":[
                 {
                     "fileName": "01",
-                    "Narrative": ""
+                    "Narrative": "會員登入頁面，使用google recaptcha v2 以防止機器人攻擊。"
                 },
                 {
                     "fileName": "02",
-                    "Narrative": ""
+                    "Narrative": "登入後會員自身的首頁，左側menu欄上半部為可上傳檔案類型的分類，下半部有會員帳號設定，追蹤者的活動通知等。"
                 },
                 {
                     "fileName": "03",
-                    "Narrative": ""
-                },
-                {
-                    "fileName": "04",
-                    "Narrative": ""
-                },
-                {
-                    "fileName": "05",
-                    "Narrative": ""
+                    "Narrative": "此圖為該網站的ER Model，可從此圖詳見，圖片/相簿具備重複使用機制，以此達到減少使用者重複上傳同樣的圖片。"
                 }
             ],
             "URL": "http://220.132.95.43/",
             "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
             "Description": "擁有簡易的會員登入系統﹐可供上傳圖片、文件及壓縮檔，亦有相簿系統。相簿與圖片為一對多功能，先至圖片系統上傳後，一張圖片可供多個相簿使用。",
+            "Features":[
+                "俱備登入系統，並搭配 google recaptcha v2 防機器人攻擊",
+                "圖片/相簿具備重複使用機制，可減少使用者重複上傳的作業次數(詳見架構圖)"
+            ],
             "Other": [
                 "測試用帳號: test",
                 "測試用密碼: test1234"
@@ -239,28 +238,34 @@
             "imgFile":[
                 {
                     "fileName": "01",
-                    "Narrative": ""
+                    "Narrative": "飼主管理列表，可用關鍵字搜尋姓名、手機。並且使用pageList.mvc製作分頁。"
                 },
                 {
                     "fileName": "02",
-                    "Narrative": ""
+                    "Narrative": "飼主的詳細資料頁面，可從此頁面查看飼主的詳細資料及在該店登錄了幾隻寵物，還有寵物是否留在該店面。"
                 },
                 {
                     "fileName": "03",
-                    "Narrative": ""
+                    "Narrative": "寵物管理列表，可從此頁面搜尋使用關鍵字搜尋寵物姓名、性別、種類及品種。也可在此頁面點選進入美容室，代表寵物目前在店內。"
                 },
                 {
                     "fileName": "04",
-                    "Narrative": ""
+                    "Narrative": "結帳頁面，在寵物要離開頁面的時候進入結帳頁面，可新增多項不同美容項目，會自動計算金額。"
                 },
                 {
                     "fileName": "05",
-                    "Narrative": ""
+                    "Narrative": "此網站的ER Model， 可以從此圖詳見飼主與寵物，及其他實體的關聯。"
                 }
             ],
             "URL": "http://220.132.95.43:8081/",
             "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
             "Description": "可新增飼主、寵物，也可以自訂品種與物種及美容項目等。飼主與寵物為一對多關係，一名飼主可擁有多隻寵物。結帳功能需先設置美容項目，只有單純的數字紀錄，並沒有涉及到金流等實作。",
+            "Features":[
+                "詳細記錄飼主與寵物資訊",
+                "可自訂品種與物種",
+                "可自訂美容項目及價格",
+                "紀錄每隻寵物入店做過哪些美容項目及其花費"
+            ],
             "Other": []
         }
     ]
