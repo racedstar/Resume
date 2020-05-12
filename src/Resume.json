@@ -222,7 +222,7 @@
             ],
             "URL": "http://220.132.95.43/",
             "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
-            "Description": "擁有簡易的會員登入系統﹐可供上傳圖片、文件及壓縮檔，亦有相簿系統。相簿與圖片為一對多功能，先至圖片系統上傳後，一張圖片可供多個相簿使用。",
+            "Description": "擁有簡易的會員登入系統﹐可供上傳圖片、文件及壓縮檔，亦有相簿系統。",
             "Features":[
                 "俱備登入系統，並搭配 google recaptcha v2 防機器人攻擊",
                 "圖片/相簿具備重複使用機制，可減少使用者重複上傳的作業次數(詳見架構圖)"
@@ -259,7 +259,7 @@
             ],
             "URL": "http://220.132.95.43:8081/",
             "Tools":"ASP.NET MVC、Entity Framework、jQuery、ajax、fancybox3、bootstrap4",
-            "Description": "可新增飼主、寵物，也可以自訂品種與物種及美容項目等。飼主與寵物為一對多關係，一名飼主可擁有多隻寵物。結帳功能需先設置美容項目，只有單純的數字紀錄，並沒有涉及到金流等實作。",
+            "Description": "可新增飼主、寵物，也可以自訂品種與物種及美容項目等。",
             "Features":[
                 "詳細記錄飼主與寵物資訊",
                 "可自訂品種與物種",
