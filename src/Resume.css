@@ -38,12 +38,16 @@ h3{
 	font-size: 20px;
 }
 
-.personalInformation{
+.contentArea{
+	margin-top: 30px;
+}
+
+#personalInformation{
 	display: flex;
 	width:100%;
 }
 
-.personalInformation img{
+#personalInformation img{
 	width:200px;
 	height:200px;
 	border-radius: 100%;
@@ -53,27 +57,27 @@ h3{
 	width:85%;
 }
 
-.summary{
+#summary{
 	word-wrap:break-word;
 }
 
-.demo a{
+#demo a{
 	color:blue
 }
 
-.demo div{
+#demo div{
 	margin-bottom: 40px; 
 }
 
-.demo span{
+#demo span{
 	font-weight: bold;
 }
 
-.summary p, .projects .indent, .demo p{
+#summary p, #projects .indent, #demo p{
 	text-indent: 20px; 
 }
 
-.projects div{
+#projects div{
 	margin-bottom:30px;
 }
 

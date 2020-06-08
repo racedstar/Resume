@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <div>
                 <h1>郝偉翔</h1>
-                <div className="personalInformation">                    
+                <div id="personalInformation" className="contentArea">                    
                     <div className="information">
                         <h2>基本資料</h2>
                         <ul>
@@ -26,16 +26,16 @@ class App extends Component {
                         </ul>
                     </div>
                     <div>
-                        <img src="img/01.jpg"></img>
+                        <img src="img/01.png"></img>
                     </div>
                 </div>
-                <div className="summary">
+                <div id="summary" className="contentArea">
                     <h2>自傳</h2>
                     {Summary.map((value) => (
                         <p>{value}</p>
                     ))}
                 </div>
-                <div className="exp">
+                <div id="exp" className="contentArea">
                     <h2>經歷</h2>
                     {
                         Exp.map((value) => (
@@ -43,7 +43,7 @@ class App extends Component {
                         ))
                     }
                 </div>
-                <div className="projects">
+                <div id="projects" className="contentArea">
                     <h2>專案</h2>
                     {
                         Projects.map((value) => (
@@ -51,7 +51,7 @@ class App extends Component {
                         ))
                     }
                 </div>
-                <div className="demo">
+                <div id="demo" className="contentArea">
                     <h2>作品</h2>
                     {
                         Demo.map((value) => (
